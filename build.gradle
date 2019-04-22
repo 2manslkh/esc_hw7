@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/byte-buddy-1.8.15.jar')
+    implementation files('libs/client-combined-3.141.59-sources.jar')
+    implementation files('libs/client-combined-3.141.59.jar')
+    implementation files('libs/commons-exec-1.3.jar')
+    implementation files('libs/guava-25.0-jre.jar')
+    implementation files('libs/okhttp-3.11.0.jar')
+    implementation files('libs/okio-1.14.0.jar')
+    implementation 'org.evosuite:evosuite:1.0.6'
+    implementation 'org.evosuite.plugins:evosuite-plugins:1.0.6'
+    implementation files('libs/evosuite-1.0.6.jar')
+    implementation 'junit:junit:4.12'
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
