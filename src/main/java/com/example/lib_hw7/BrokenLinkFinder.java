@@ -29,7 +29,9 @@ public class BrokenLinkFinder {
 		    System.out.println("*** The link " + "is not HTTP or requires certificate validation, message = " + acknowledge);
 		}  				
 	}
-		
+
+	// REMOVED Print if redicted (repeated code smell)
+
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver","./selenium/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

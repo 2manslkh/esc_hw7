@@ -20,8 +20,6 @@ public class LoginBotWithInvalidValidUser{
         WebElement nextButton = driver.findElement(By.id("identifierNext"));
 
         for (int i = 0; i < a.length; i++) {
-            // Run the fuzz.exe program.
-            // fuzz.exe is modified simple-fuzzer.c with a constant output of 32 fuzz chars.
             username.sendKeys(a[i]);
             nextButton.click();
             username.clear();

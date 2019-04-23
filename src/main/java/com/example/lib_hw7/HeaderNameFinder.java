@@ -14,7 +14,7 @@ public class HeaderNameFinder {
 
     @Test
     public void test() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","./chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.get("http://istd.sutd.edu.sg");
